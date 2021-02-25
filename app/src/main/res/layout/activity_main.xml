@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/botton_border">
+
+        <TextView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="WEIGHT TRAY"
+            android:textColor="#818181"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/topSignupBtn"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:text="회원가입"
+            android:textColor="#000000"
+            app:backgroundTint="#FFF2CC"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/topLogInBtn"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/topLogInBtn"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:text="로그인"
+            android:textColor="#000000"
+            app:backgroundTint="#FFF2CC"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--android:background="@android:color/transparent" : 배경 투명 처리
+        android:scaleType="centerInside" : 버튼에 이미지 크기 맞춰주기
+    -->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="60dp">
+
+        <ImageView
+            android:id="@+id/mainImg"
+            android:layout_width="201dp"
+            android:layout_height="246dp"
+            android:layout_marginTop="104dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/main" />
+
+        <Button
+            android:id="@+id/start"
+            android:layout_width="194dp"
+            android:layout_height="95dp"
+            android:layout_marginTop="36dp"
+            android:text="지금 시작하기"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            app:backgroundTint="#FFF2CC"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mainImg" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
